@@ -11,7 +11,6 @@
 		C314BF9C1FAD211C00F363C6 /* MailDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C314BF9B1FAD211B00F363C6 /* MailDelegate.m */; };
 		C314FBB02152A96E0055C36A /* EventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C314FBAF2152A96D0055C36A /* EventVC.m */; };
 		C317F74F1B41FF1B00962B55 /* MceConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = C317F74E1B41FF1B00962B55 /* MceConfig.json */; };
-		C31827041B71257B00D497A2 /* richnotification.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = C31827031B71257B00D497A2 /* richnotification.xcdatamodel */; };
 		C31AAD5F1D25CA4000A8F6BD /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B2A29A1D245B4E00286475 /* NotificationService.m */; };
 		C32FC4111B44A5590035CAB8 /* InAppVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C32FC40F1B44A5590035CAB8 /* InAppVC.m */; };
 		C335717C1B3B6461003E0A7A /* MCEInboxDefaultTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = C33571671B3B6461003E0A7A /* MCEInboxDefaultTemplate.m */; };
@@ -57,6 +56,7 @@
 		C38178C51F3E430400ACDCFC /* ExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C38178C41F3E430400ACDCFC /* ExampleViewController.xib */; };
 		C3942CBE1D70AEF50099BA1E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3942CBC1D70AEB80099BA1E /* MapKit.framework */; };
 		C3942CC71D70B1DF0099BA1E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3942CC61D70B1DF0099BA1E /* CoreLocation.framework */; };
+		C3962CE021E649D500AEC152 /* MceConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = C317F74E1B41FF1B00962B55 /* MceConfig.json */; };
 		C3A80AD81BA3686E00EE45ED /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A80AD71BA3686E00EE45ED /* CoreTelephony.framework */; };
 		C3A80ADA1BA3687300EE45ED /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A80AD91BA3687300EE45ED /* CoreData.framework */; };
 		C3AF23051D2C45D500A1D266 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C3AF23041D2C45D500A1D266 /* libsqlite3.0.tbd */; };
@@ -188,7 +188,6 @@
 		C314FBAE2152A96D0055C36A /* EventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventVC.h; sourceTree = "<group>"; };
 		C314FBAF2152A96D0055C36A /* EventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventVC.m; sourceTree = "<group>"; };
 		C317F74E1B41FF1B00962B55 /* MceConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MceConfig.json; path = ../../../MceConfig.json; sourceTree = "<group>"; };
-		C31827031B71257B00D497A2 /* richnotification.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = richnotification.xcdatamodel; path = ../../richnotification.xcdatamodel; sourceTree = "<group>"; };
 		C32FC40F1B44A5590035CAB8 /* InAppVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InAppVC.m; sourceTree = "<group>"; };
 		C32FC4101B44A5590035CAB8 /* InAppVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InAppVC.h; sourceTree = "<group>"; };
 		C33571661B3B6461003E0A7A /* MCEInboxDefaultTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCEInboxDefaultTemplate.h; sourceTree = "<group>"; };
@@ -337,6 +336,7 @@
 		C3E61CC31D1300A8006EC588 /* Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Sample.entitlements; sourceTree = SOURCE_ROOT; };
 		C3ED8B2B1BA8D9DF00B79D65 /* MainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
 		C3ED8B2C1BA8D9DF00B79D65 /* MainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		C3F143CD21923724000BF0F9 /* Notification Service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Notification Service.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -633,7 +633,7 @@
 		C3D01E521A607F7E00C9A66C = {
 			isa = PBXGroup;
 			children = (
-				C31827031B71257B00D497A2 /* richnotification.xcdatamodel */,
+				C3F143CD21923724000BF0F9 /* Notification Service.entitlements */,
 				C3C399051B20DE740080DC49 /* Plugins */,
 				C3B2A2981D245B4E00286475 /* SampleNotificationService */,
 				C3E2319D1FAA24CD00DCD58D /* watchkitapp */,
@@ -955,6 +955,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3962CE021E649D500AEC152 /* MceConfig.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1038,7 +1039,6 @@
 				C3C399081B20DE7C0080DC49 /* SnoozeActionPlugin.m in Sources */,
 				C3E4F1521A8BE16600844271 /* PushActionsVC.m in Sources */,
 				C35F708B1C654DE500070DB6 /* MCEInboxPostTemplateView.m in Sources */,
-				C31827041B71257B00D497A2 /* richnotification.xcdatamodel in Sources */,
 				C3C399141B20DE900080DC49 /* ActionMenuPlugin.m in Sources */,
 				C3E4F14F1A8BC69B00844271 /* RegistrationVC.m in Sources */,
 				C35F708A1C654DE500070DB6 /* MCEInboxPostTemplateVideoPlayerView.m in Sources */,
@@ -1219,6 +1219,7 @@
 				INFOPLIST_FILE = SampleNotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -1248,6 +1249,7 @@
 				INFOPLIST_FILE = SampleNotificationService/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = INSERT.BUNDLE.ID.HERE.notification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1370,7 +1372,7 @@
 					"$(PROJECT_DIR)/Sample",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1405,7 +1407,7 @@
 					"$(PROJECT_DIR)/Sample",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sample/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
